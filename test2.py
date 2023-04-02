@@ -125,7 +125,7 @@ def test_2():
 
     #绘制关键步骤曲线图
     plt.plot(x,Committed_step,'ro-',label='Committed step')
-    y = [M ** x * 10 **(-2) * 2.5 for x  in range(1, 16)]
+    y = [M ** x * 10 **(-2) * 3 for x  in range(1, 16)]
     plt.plot(x,y,'yo-',label = 'The theoretical value of backtrace')
     plt.grid(True)  # 显示网格线
     plt.xlabel('N')  # 设置x轴标签为N
@@ -160,7 +160,7 @@ def test_2():
 
     # 绘制关键步骤曲线图
     plt.plot(x, Committed_step, 'ro-', label='Committed step')
-    y = [x ** N * 10 ** (-2)  for x in range(1, 10)]
+    y = [x ** N * 10 ** (-3) * 3.5 for x in range(1, 10)]
     plt.plot(x, y, 'yo-', label='The theoretical value of backtrace')
     plt.grid(True)  # 显示网格线
     plt.xlabel('M')  # 设置x轴标签为M
