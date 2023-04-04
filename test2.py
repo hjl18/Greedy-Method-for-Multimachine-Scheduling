@@ -90,7 +90,7 @@ def test_2():
     y1 = [x * N  * 10**(-2) * 1.01  for x in range(10, 501, 50)]
     plt.plot(x, y1, 'yo-', label='The theoretical value of greedy 1')
     plt.plot(x, B_Step, 'bo-', label='Greedy 2')
-    y2 = [x * N  * 10**(-1) * 4.2  for x in range(10, 501, 50)]
+    y2 = [x * N * 10**(-1) * 4.2  for x in range(10, 501, 50)]
     plt.plot(x, y2, 'mo-', label='The theoretical value of greedy 2')
     plt.xlabel('M')  # 设置x轴标签为M
     plt.ylabel('Committed step(times)')  # 设置y轴标签为Committed step(ms)
